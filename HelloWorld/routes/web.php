@@ -17,3 +17,9 @@ Route::get('/', function () {
 Route::get('/helloworld', function () {
     return view('helloworld');
 });
+Route::get('/apitest', function () {
+    $body = array(
+        'message' => 'initial message.'
+    );
+    return view('apitest', $body);
+});
